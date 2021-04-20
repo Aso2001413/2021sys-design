@@ -4,15 +4,15 @@ start
 
 :weather = 天気情報;
 
-split(0)
-   :A;
-split again(1)
-   :B;
-split again(2)
-   :C;
-split again(None)
-   :a;
-end split
+if(wather)then(0)
+:快晴です;
+elseif(wather)then(1)
+:曇りです;
+elseif(wather)then(2)
+:雨です;
+else(その他)
+:不明です;
+endif
 
 end
 @enduml

@@ -6,7 +6,7 @@ start
 
 if(wather)then(0)
 :快晴です;
-elseif(wather)then(1)
+(0以外)elseif(wather)then(1)
 :曇りです;
 elseif(wather)then(2)
 :雨です;

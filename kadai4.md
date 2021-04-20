@@ -3,13 +3,16 @@
 start
 
 :weather = 天気情報;
-if(wwather)then(0)
-:快晴です;
-else(1)
-:曇りです;
-else(2)
-:雨です;
-endif
+
+split(0)
+   :A;
+split again(1)
+   :B;
+split again(2)
+   :C;
+split again(None)
+   :a;
+end split
 
 end
 @enduml

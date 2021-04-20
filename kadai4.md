@@ -8,7 +8,7 @@ if(wather)then(0)
 :快晴です;
 (0以外)elseif(wather)then(1)
 :曇りです;
-elseif(wather)then(2)
+(1以外)elseif(wather)then(2)
 :雨です;
 else(その他)
 :不明です;

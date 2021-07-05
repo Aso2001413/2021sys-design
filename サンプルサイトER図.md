@@ -18,6 +18,7 @@ package "ECサイト" as target_system {
       マスターテーブルを M、トランザクションを T などで表記
       １文字なら "主" とか "従" まど日本語でも記載可能
      '/
+     m_customers ||-d-o{ d_purchase
 
     entity "購入テーブル" as purchase <d_purchase> <<T,TRANSACTION_MARK_COLOR>> {
         + order_id [PK]

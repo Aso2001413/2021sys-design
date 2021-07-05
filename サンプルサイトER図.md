@@ -27,7 +27,7 @@ package "ECサイト" as target_system {
         total_price
     }
     
-    entity "顧客マスタ" as customer <m_customers> <<T,MASTER_MARK_COLOR>> {
+    entity "顧客マスタ" as customer <m_customers> <<T,TRANSACTION_MARK_COLOR>> {
         + customer_code [PK]
         --
         pass
@@ -39,7 +39,7 @@ package "ECサイト" as target_system {
         reg_date
     }
     
-    entity "購入詳細テーブル" as purchase_detail <d_purchase_detail> <<T,MASTER_MARK_COLOR>> {
+    entity "購入詳細テーブル" as purchase_detail <d_purchase_detail> <<T,TRANSACTION_MARK_COLOR>> {
         + order_id [PK]
         + detail_id[PK]
         --
@@ -57,6 +57,13 @@ package "ECサイト" as target_system {
         image
         detail
         del_flag
+        reg_date
+    }
+    
+    entity "カテゴリマスタ" as m_category <m_category> <<M,MASTER_MARK_COLOR>> {
+        + category_id [PK]
+        --
+        name
         reg_date
     }
 

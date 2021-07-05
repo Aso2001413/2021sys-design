@@ -25,6 +25,7 @@ package "ECサイト" as target_system {
         + customer_code[FK]
         purchase_date
         total_price
+        m_customers ||-d-o{ d_purchase
     }
     
     entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
@@ -66,7 +67,6 @@ package "ECサイト" as target_system {
         name
         reg_date
     }
-    m_customers ||-d-o{ d_purchase
     }
 
 @enduml

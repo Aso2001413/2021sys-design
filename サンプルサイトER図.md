@@ -67,6 +67,5 @@ package "ECサイト" as target_system {
         reg_date
     }
 
-
 @enduml
 ```

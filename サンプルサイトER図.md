@@ -39,7 +39,7 @@ package "ECサイト" as target_system {
         reg_date
     }
     
-    entity "購入詳細テーブル" as purchase <d_purchase_detail> <<T,MASTER_MARK_COLOR>> {
+    entity "購入詳細テーブル" as purchase_detail <d_purchase_detail> <<T,MASTER_MARK_COLOR>> {
         + order_id [PK]
         + detail_id[PK]
         --

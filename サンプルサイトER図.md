@@ -19,7 +19,7 @@ package "ECサイト" as target_system {
       １文字なら "主" とか "従" まど日本語でも記載可能
      '/
 
-    entity "購入テーブル" as purchase <d_purchase> <<M,MASTER_MARK_COLOR>> {
+    entity "購入テーブル" as purchase <d_purchase> <<T,TRANSACTION_MARK_COLOR>> {
         + order_id [PK]
         --
         + customer_code[FK]
@@ -27,7 +27,7 @@ package "ECサイト" as target_system {
         total_price
     }
     
-    entity "顧客マスタ" as customer <m_customers> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         + customer_code [PK]
         --
         pass

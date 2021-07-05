@@ -26,10 +26,10 @@ package "ECサイト" as target_system {
         + customer_code[FK]
         purchase_date
         total_price
-        m_customers ||-d-o{ d_purchase
+       
     }
     
-    purchase }|..|| m_customers
+    purchase }|..|| customers
     
     entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         + customer_code [PK]

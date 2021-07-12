@@ -3,7 +3,7 @@
 ### プロトタイプは以下のリンク先
 [プロトタイプ](https://www.figma.com/file/2EgRnpiz4z8ARzYYjZVu5l/originalsite)
 *****
-<img src="img/toppage.png" width="500">
+<img src="img/original.png" width="500">
 
 *****
 補足：対応DBの列はDB設計後、○を対応するテーブル・カラムに差し替えること。
